@@ -147,7 +147,7 @@
 			},
 
 			init: function (editor) {
-				if (editor.id != 'content') {
+				if (editor.id != 'content' && editor.id.indexOf('fw_wp_editor') < 0) {
 					return; // add button only to post content wp-editor
 				}
 
